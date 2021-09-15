@@ -32,15 +32,22 @@
             bottom: -2em;
             border-radius: 0 0 0.8em 0.8em;
         }
-            .share-mobile{
+            .share-close{
                 transform: scale(0);
-            }
-            .mobile-btn{
-                display: block;
             }
         svg{
             display: none;
         }
+        #mobile-btn{
+            display: block;
+        }
+            .mobile-btn a{
+                color:white;
+                transition: 0.5s linear;
+            }
+            .mobile-btn a:hover{
+                color:hsl(212, 23%, 69%);
+            }
     .attribution{
         position: inherit;
         bottom: unset;

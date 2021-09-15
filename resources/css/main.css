@@ -119,7 +119,7 @@ body{
             transform-origin: center;
             transform: scale(0);
         }
-            .mobile-btn{
+            #mobile-btn{
                 display: none;
             }
             .share-active{

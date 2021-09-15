@@ -4,18 +4,19 @@ const shareBtn = () => {
 
 	btn.addEventListener("click", function () {
 		share.classList.toggle("share-active");
-		btn.classList.toggle("btn-active");
+		btn.classList.toggle('btn-active')
+
 	});
 };
 const closeBtn = () => {
-	const shareMobile = document.querySelector(".share");
-	const mobileBtn = document.querySelector(".mobile-btn");
-
-	mobileBtn.addEventListener("click", function () {
-        shareMobile.classList.toggle("share-mobile");
-        
-    });
+	const mobileBtn = document.querySelector('#mobile-btn')
+	const share = document.querySelector('.share')
+	const btn = document.querySelector(".btn");
+	
+	mobileBtn.addEventListener('click', function () {
+		share.classList.add('share-close')
+		btn.classList.remove('btn-active')
+	})
 };
-
-shareBtn();
-closeBtn();
+shareBtn()
+closeBtn()
